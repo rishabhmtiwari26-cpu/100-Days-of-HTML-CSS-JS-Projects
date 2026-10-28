@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BrainBoost - Brain Training Game</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <div class="logo">🧠</div>
+        <h1>BrainBoost</h1>
+        <p class="subtitle">Train your brain. Challenge yourself.</p>
+    </div>
+
+    <div class="stats">
+        <div class="stat">
+            <span>⭐ BEST SCORE</span>
+            <strong id="bestScore">0</strong>
+        </div>
+        <div class="stat">
+            <span>🎯 YOUR SCORE</span>
+            <strong id="score">0</strong>
+        </div>
+        <div class="stat">
+            <span>⏱️ TIME LEFT</span>
+            <strong id="timer">60</strong>
+        </div>
+    </div>
+
+    <!-- HOME SCREEN -->
+    <section id="homeScreen">
+
+        <h2 class="section-title">Choose Your Challenge</h2>
+
+        <div class="categories">
+            <button class="category active" data-category="mixed">
+                <span class="icon">🎮</span>
+                Mixed Quiz
+            </button>
+
+            <button class="category" data-category="math">
+                <span class="icon">🔢</span>
+                Math Challenge
+            </button>
+
+            <button class="category" data-category="logic">
+                <span class="icon">🧩</span>
+                Logic Puzzles
+            </button>
+
+            <button class="category" data-category="memory">
+                <span class="icon">🧠</span>
+                Memory & Patterns
+            </button>
+        </div>
+
+        <button class="primary-btn" id="startBtn">
+            Start Brain Training 🚀
+        </button>
+
+        <p class="subtitle" style="text-align:center;margin-top:15px">
+            Answer as many questions as you can in 60 seconds!
+        </p>
+
+    </section>
+
+    <!-- QUIZ SCREEN -->
+    <section id="quizScreen" class="hidden">
+
+        <div class="topline">
+            <span id="questionCount">Question 1</span>
+            <span id="categoryLabel">Mixed Quiz</span>
+        </div>
+
+        <div class="progress-bg">
+            <div class="progress" id="progress"></div>
+        </div>
+
+        <h2 class="question" id="questionText"></h2>
+
+        <div class="options" id="options"></div>
+
+        <div id="feedback" class="feedback hidden"></div>
+
+        <button id="nextBtn" class="primary-btn next-btn hidden">
+            Next Question →
+        </button>
+
+    </section>
+
+    <!-- RESULT SCREEN -->
+    <section id="resultScreen" class="hidden result">
+
+        <div class="result-icon" id="resultIcon">🏆</div>
+
+        <h2 id="resultTitle">Amazing Work!</h2>
+
+        <p class="subtitle">Your final score</p>
+
+        <div class="result-score" id="finalScore">0</div>
+
+        <div class="result-text">
+            <p id="resultMessage"></p>
+            <p id="accuracyText"></p>
+            <p id="answeredText"></p>
+        </div>
+
+        <button class="primary-btn" id="playAgainBtn">
+            Play Again 🔄
+        </button>
+
+        <button class="secondary-btn" id="homeBtn">
+            Back to Home
+        </button>
+
+    </section>
+
+    <div class="footer">
+        BRAINBOOST • THINK FASTER • PLAY SMARTER
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
