@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubik's Cube - Day 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>RUBIK'S CUBE</h1>
+        <p class="subtitle">Day 2 - HTML CSS JS Project</p>
+        
+        <div class="scene">
+            <div class="cube" id="cube">
+                <div class="face front"></div>
+                <div class="face back"></div>
+                <div class="face right"></div>
+                <div class="face left"></div>
+                <div class="face top"></div>
+                <div class="face bottom"></div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="timer-box">
+                <div id="scramble">Click Shuffle for new scramble</div>
+                <div id="timer">00:00.00</div>
+            </div>
+            <div class="buttons">
+                <button id="shuffleBtn">Shuffle</button>
+                <button id="startBtn">Start Timer</button>
+                <button id="resetBtn">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
