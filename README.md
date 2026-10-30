@@ -1,4 +1,4 @@
-![100 Days of Banner] (./Banner.png)
+![100 Days of Banner](./Banner.png)
 
 # 100 Days of Code - HTML, CSS & JavaScript Projects 🚀
 
